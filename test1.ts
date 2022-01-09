@@ -10,7 +10,7 @@ interface Statistics {
 }
 
 function getStatistics(marks: Student[]): Statistics {
-	let avg: number = Math.round(marks.reduce((t, c) => t + c.avgMark, 0) / marks.length * 100) / 100;
+  let avg: number = Math.round(marks.reduce((t, c) => t + c.avgMark, 0) / marks.length * 100) / 100;
   // let highMark: string = marks.reduce((t, c) => Math.max(t.avgMark, c.avgMark) == t.avgMark ? t : c).name;
   // let lowMark: string = marks.reduce((t, c) => Math.min(t.avgMark, c.avgMark) == t.avgMark ? t : c).name;
   // return {avgMark: avg, highestMark: highMark, lowestMark: lowMark};
